@@ -184,9 +184,9 @@ class Suit {
   void manualSeesaw() {
     if(!seesawOn) {
       seesawOn = true;
-      ((LeftArm)suit.get(1)).setArm(90, 90);
+      ((LeftArm)suit.get(1)).setPosition(90, 90);
       ((LeftArm)suit.get(1)).setAngleMinMax(0, 180);
-      ((RightArm)suit.get(0)).setArm(-90, -90);
+      ((RightArm)suit.get(0)).setPosition(-90, -90);
       ((RightArm)suit.get(0)).setAngleMinMax(-180, 0);
     }
     if (mouseY > 700/2) {

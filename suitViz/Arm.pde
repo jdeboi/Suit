@@ -15,7 +15,7 @@ class Arm extends Segment {
     super(20);
     minAngle = -220;
     maxAngle = 220;
-    setArm(x, y, angle1, angle2);
+    setPosition(x, y, angle1, angle2);
     biImg = loadImage("images/arm0.png");
     foreImg = loadImage("images/arm1.png");
   }
@@ -37,11 +37,11 @@ class Arm extends Segment {
   }
 
   void setPosition(float angle1, float angle2) {
-    setArm(xShoulder, yShoulder, angle1, angle2);
+    setPosition(xShoulder, yShoulder, angle1, angle2);
   }
 
   void incArm(float amtSh, float amtElb) {
-    setArm(xShoulder, yShoulder, angleShoulder+amtSh, angleElbow+amtElb);
+    setPosition(xShoulder, yShoulder, angleShoulder+amtSh, angleElbow+amtElb);
   }
 
   void moveToSmoothly(int angle, int speed) {

@@ -45,7 +45,7 @@ class Segment {
   }
   
   void setPosition(int x, int y, float angle1, float angle2) { }
-  void setPosition(float angle1, float angle2) { 
+  void setPosition(float angle1, float angle2) {} 
 
   void setLEDPositions() {
   }
